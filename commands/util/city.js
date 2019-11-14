@@ -7,7 +7,7 @@ module.exports = class AskCommand extends Command {
         super(client, {
             name: 'city',
             aliases: [],
-            group: 'util,
+            group: 'util',
             memberName: 'city',
             description: 'Displays useful and informational links for that city.',
             examples: [
@@ -25,10 +25,7 @@ module.exports = class AskCommand extends Command {
     }
 
 		run (msg, {type}){
-
-        var guildID = (msg.guild !== null) ? msg.guild.id : null;
-
-        var options = [];
+      var options = [];
         type = type.toLowerCase();
 
         if (type === 'syka'){
@@ -56,8 +53,9 @@ module.exports = class AskCommand extends Command {
 							footer: {
 								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=57_1555170736.png',
 								text: "Moderator: Gossamer"
+							}
 						});
-        } else if(type === 'lhavit'){
+       	} else if(type === 'lhavit'){
 					return msg.embed({
 							color: 0x3573A4,
 							title: 'Lhavit',
@@ -82,8 +80,9 @@ module.exports = class AskCommand extends Command {
 							footer: {
 								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=43765_1515859156.png',
 								text: "Moderator: Luminescence"
+							}
 					});
-				} else if(type === 'syliras'){
+			} else if(type === 'syliras'){
 						return msg.embed({
 							color: 0x3573A4,
 							title: 'Syliras, Currently Closed',
@@ -112,8 +111,9 @@ module.exports = class AskCommand extends Command {
 								footer: {
 									icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=117883_1567473135.jpg',
 									text: "Moderator: Mayhem"
+							}
 					});
-				} else if(type === 'ravok'){
+			} else if(type === 'ravok'){
 						return msg.embed({
 							color: 0x3573A4,
 							title: 'Ravok',
@@ -136,10 +136,11 @@ module.exports = class AskCommand extends Command {
 								}
 						],
 								footer: {
-									icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=117883_1567473135.jpg',
+									icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=58_1379896652.gif',
 									text: "Moderator: Gillar"
+								}
 					});
-				} else if(type === 'sunberth'){
+			} else if(type === 'sunberth'){
 						return msg.embed({
 							color: 0x3573A4,
 							title: 'Sunberth',
@@ -163,8 +164,9 @@ module.exports = class AskCommand extends Command {
 						],
 								footer: {
 									text: "Moderator: None, requests go through Help Desk"
+								}
 					});
-				} else if(type === 'zeltiva'){
+			} else if(type === 'zeltiva'){
 						return msg.embed({
 							color: 0x3573A4,
 							title: 'Zeltiva',
@@ -188,8 +190,9 @@ module.exports = class AskCommand extends Command {
 						],
 								footer: {
 									text: "Moderator: None, requests go through Help Desk"
+								}
 					});
-				} else if(type === ['wind reach', 'wr']){
+			} else if(type === ['wind reach', 'wr']){
 						return msg.embed({
 							color: 0x3573A4,
 							title: 'Wind Reach',
@@ -213,9 +216,10 @@ module.exports = class AskCommand extends Command {
 						],
 								footer: {
 									text: "Moderator: None, requests go through Help Desk"
+								}
 					});
-        } else {
-            return msg.say("that's not a city!"));
+      } else {
+            return msg.say("that's not a city!");
         }
 
     }
