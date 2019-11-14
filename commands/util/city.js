@@ -1,6 +1,7 @@
 const { Command } = require('discord.js-commando');
 const lib = require('./../../lib.js');
 
+// just a list of the currently closed cities
 var closed = ['sahova', 'nyka', 'avanthal', 'the spires', 'sultros', 'alvadas', 'kalinor', 'taloba', 'zinrah', 'black rock', 'endrykas', 'riverfall', 'kenash', 'mura', 'abura'];
 
 module.exports = class AskCommand extends Command {
@@ -29,14 +30,10 @@ module.exports = class AskCommand extends Command {
 		run (msg, {type}){
       var options = [];
         type = type.toLowerCase();
-
-			switch(type == ['sahova', 'nyka', 'avanthal', 'the spires', 'sultros', 'alvadas', 'kalinor', 'taloba', 'zinrah', 'black rock', 'endrykas', 'riverfall', 'kenash', 'mura', 'abura']) {
-				case true:
+// Checks whether or not the listed city is in the closed variable array
+				if (closed.includes(type)) {
 					return msg.say("That city is closed!");
-					break;
-
-				default:	
-      	if (type === 'syka'){
+      	} else if (type === 'syka'){
 					return msg.embed({
 							color: 0x04385D,
 							author: {
@@ -137,7 +134,7 @@ module.exports = class AskCommand extends Command {
 								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=58_1379896652.gif'
 							},
 							title: 'Ravok',
-							description: "Built on an enormous lake, Ravok is the home of a floating city populated with humans who believe their home to superior to the rest of Mizahar. They love and honor their god in all they do but are very untrusting of outsiders.",
+							description: "Built on an enormous lake, Ravok is the home of a floating city populated with humans who believe their home to be superior to the rest of Mizahar. They love and honor their god in all they do but are very untrusting of outsiders.",
 							thumbnail: {
 								url: 'http://www.mizahar.com/forums/gallery/pic.php?mode=large&pic_id=63580'
 							},
@@ -256,6 +253,7 @@ module.exports = class AskCommand extends Command {
 								}
 						]
 					});
+					// if you type in nonsense this is what you get
       	} else {
             return msg.say("That's not a city!");
         }
