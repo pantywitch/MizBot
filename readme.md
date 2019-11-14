@@ -18,7 +18,7 @@ A customized bot for the Mizahar [[Discord]] server.  Based on [https://github.c
 
 `~sprint`: Write with your friends and see who can write the most in the time limit~
 
-`~words`: Generate a random real word in English.
+`~words`: Generate a real, random, English word.
 
 `~wrote`: Add to your total words written statistic
 
@@ -49,6 +49,7 @@ A customized bot for the Mizahar [[Discord]] server.  Based on [https://github.c
 
 `~reset`: Allows you to reset your stats
 
+`~welcome`: Displays a list of starting links.
 
 ***
 
