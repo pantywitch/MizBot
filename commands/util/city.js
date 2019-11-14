@@ -1,6 +1,8 @@
 const { Command } = require('discord.js-commando');
 const lib = require('./../../lib.js');
 
+var closed = ['sahova', 'nyka', 'avanthal', 'the spires', 'sultros', 'alvadas', 'kalinor', 'taloba', 'zinrah', 'black rock', 'endrykas', 'riverfall', 'kenash', 'mura', 'abura'];
+
 module.exports = class AskCommand extends Command {
     constructor(client) {
 
@@ -28,36 +30,52 @@ module.exports = class AskCommand extends Command {
       var options = [];
         type = type.toLowerCase();
 
-        if (type === 'syka'){
+			switch(type == ['sahova', 'nyka', 'avanthal', 'the spires', 'sultros', 'alvadas', 'kalinor', 'taloba', 'zinrah', 'black rock', 'endrykas', 'riverfall', 'kenash', 'mura', 'abura']) {
+				case true:
+					return msg.say("That city is closed!");
+					break;
+
+				default:	
+      	if (type === 'syka'){
 					return msg.embed({
-							color: 0x3573A4,
+							color: 0x04385D,
+							author: {
+								name: "Storyteller: Gossamer",
+								url: "http://www.mizahar.com/forums/member57.html",
+								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=57_1555170736.png'
+							},
 							title: 'Syka',
 							description: "This brand new settlement is a tropical paradise on the edge of the Falyndar jungle. Buffeted by the Suvan, the settlement of Syka holds many secrets.",
 							thumbnail: {
 									url: 'http://www.mizahar.com/forums/gallery/pic.php?mode=large&pic_id=63580'
 							},
 							fields: [
-									{
-											name: "Forum",
-											value: "http://www.mizahar.com/forums/syka-f156.html"
-									},
-									{
-											name: "Lore Page",
-											value: "http://www.mizahar.com/lore/Syka"
-									},
-									{
-											name: "Codex",
-											value: "http://www.mizahar.com/forums/topic65044.html"
-									}
-							],
-							footer: {
-								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=57_1555170736.png',
-								text: "Moderator: Gossamer"
-							}
+								{
+										name: "Forums",
+										value: "[IC Forum](http://www.mizahar.com/forums/syka-f156.html), [OOC Forum](http://www.mizahar.com/forums/paradise-rediscovered-f157.html)"
+								},
+								{
+										name: "Getting Started",
+										value: "[Codex](http://www.mizahar.com/forums/topic65044.html), [Request Thread](http://www.mizahar.com/forums/topic66737.html), [Employment Guide](http://www.mizahar.com/forums/topic71334.html), [OOC Thread](http://www.mizahar.com/forums/topic73545.html)"
+								},
+								{
+										name: "Fall 519",
+										value: "[Registry](http://www.mizahar.com/forums/topic77239.html), [Calendar](http://www.mizahar.com/forums/topic77245.html)"
+								},
+								{
+									name: "Lore Pages",
+									value: "[Syka](http://www.mizahar.com/lore/Syka)"
+								}
+							]
 						});
-       	} else if(type === 'lhavit'){
+      	} else if(type === 'lhavit'){
 					return msg.embed({
-							color: 0x3573A4,
+							color: 0x04385D,
+							author: {
+								name: "Storyteller: Luminescence",
+								url: "http://www.mizahar.com/forums/member43765.html",
+								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=43765_1515859156.png'
+							},
 							title: 'Lhavit',
 							description: "Crystaline city of the clouds located on Kalea's extreme west coast. Home of the Alvina of the Stars and rife with magic, this remote city shimmers with its own unique light.",
 							thumbnail: {
@@ -65,26 +83,31 @@ module.exports = class AskCommand extends Command {
 							},
 							fields: [
 									{
-											name: "Forum",
-											value: "http://www.mizahar.com/forums/lhavit-f103.html"
+											name: "Forums",
+											value: "[IC Forum](http://www.mizahar.com/forums/lhavit-f103.html), [OOC Forum](http://www.mizahar.com/forums/the-shape-of-things-to-come-f116.html)"
 									},
 									{
-											name: "Lore Page",
-											value: "http://www.mizahar.com/lore/Lhavit"
+											name: "Getting Started",
+											value: "[Codex](http://www.mizahar.com/forums/topic36355.html), [Job and Wage Requests](http://www.mizahar.com/forums/topic75282.html), [OOC Thread](http://www.mizahar.com/forums/topic65868.html)"
 									},
 									{
-											name: "Codex",
-											value: "http://www.mizahar.com/forums/topic36355.html"
+											name: "Fall 519",
+											value: "[Registry](http://www.mizahar.com/forums/topic77238.html), [Calendar](http://www.mizahar.com/forums/topic77260.html)"
+									},
+									{
+										name: "Lore Pages",
+										value: "[Lhavit](http://www.mizahar.com/lore/Lhavit)"
 									}
-							],
-							footer: {
-								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=43765_1515859156.png',
-								text: "Moderator: Luminescence"
-							}
+							]
 					});
-			} else if(type === 'syliras'){
+				} else if(type === 'syliras'){
 						return msg.embed({
-							color: 0x3573A4,
+							color: 0x04385D,
+							author: {
+								name: "Storyteller: Mayhem",
+								url: "http://www.mizahar.com/forums/member117883.html",
+								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=117883_1567473135.jpg'
+							},
 							title: 'Syliras, Currently Closed',
 							description: "Capital city of Sylira, Syliras is the cultural melting pot of humanity where folks are slowly rebuilding civilization in a setting forged by the honor of the Syliran Knights. Place of the massive Ironworks, extensive agriculture, and the Miza Mint, where coin across the nation is made... Syliras is an important part of the Mizaharian World.",
 							thumbnail: {
@@ -96,26 +119,23 @@ module.exports = class AskCommand extends Command {
 									value: "December 1st, 2019 (Winter 1st 519)"
 								},
 								{
-									name: "Forum",
-									value: "http://www.mizahar.com/forums/syliras-closed-f19.html"
+									name: "Forums",
+									value: "[Syliras Forum](http://www.mizahar.com/forums/syliras-closed-f19.html), [Cobalt Mountains Forum](http://www.mizahar.com/forums/the-cobalt-mountains-f79.html)"
 								},
 								{
-									name: "Lore Page",
-									value: "http://www.mizahar.com/lore/Syliras"
-								},
-								{
-									name: "Codex",
-									value: "tbd"
+									name: "Lore Pages",
+									value: "[Syliras](http://www.mizahar.com/lore/Syliras)"
 								}
 						],
-								footer: {
-									icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=117883_1567473135.jpg',
-									text: "Moderator: Mayhem"
-							}
 					});
-			} else if(type === 'ravok'){
+				} else if(type === 'ravok'){
 						return msg.embed({
-							color: 0x3573A4,
+							color: 0x04385D,
+							author: {
+								name: "Storyteller: Gillar",
+								url: "http://www.mizahar.com/forums/member58.html",
+								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=58_1379896652.gif'
+							},
 							title: 'Ravok',
 							description: "Built on an enormous lake, Ravok is the home of a floating city populated with humans who believe their home to superior to the rest of Mizahar. They love and honor their god in all they do but are very untrusting of outsiders.",
 							thumbnail: {
@@ -123,26 +143,31 @@ module.exports = class AskCommand extends Command {
 							},
 							fields: [
 								{
-									name: "Forum",
-									value: "http://www.mizahar.com/forums/ravok-f61.html"
+										name: "Forums",
+										value: "[IC Forum](http://www.mizahar.com/forums/ravok-f61.html), [OOC Forum](http://www.mizahar.com/forums/the-docks-f83.html)"
 								},
 								{
-									name: "Lore Page",
-									value: "http://www.mizahar.com/lore/Ravok"
+										name: "Getting Started",
+										value: "[Linkmap](http://www.mizahar.com/forums/topic70803.html), [Request Thread](http://www.mizahar.com/forums/topic68754.html), [OOC Thread](http://www.mizahar.com/forums/topic65902.html)"
 								},
 								{
-									name: "Linkmap",
-									value: "http://www.mizahar.com/forums/topic70803.html"
+										name: "Fall 519",
+										value: "[Registry](http://www.mizahar.com/forums/topic77298.html), [Calendar](http://www.mizahar.com/forums/topic77297.html)"
+								},
+								{
+									name: "Lore Pages",
+									value: "[Ravok](http://www.mizahar.com/lore/Ravok)"
 								}
-						],
-								footer: {
-									icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=58_1379896652.gif',
-									text: "Moderator: Gillar"
-								}
+						]
 					});
-			} else if(type === 'sunberth'){
+				} else if(type === 'sunberth'){
 						return msg.embed({
-							color: 0x3573A4,
+							color: 0xC0DCF4,
+							author: {
+								name: "Storyteller: Gossamer, requests go through Help Desk",
+								url: "http://www.mizahar.com/forums/help-desk-f9.html",
+								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=57_1555170736.png'
+							},
 							title: 'Sunberth',
 							description: "A former mining town almost entirely destroyed in the Valterrian, Sunberth is populated by the descendants of the mine workers. They hold a tremendous grudge against the way their ancestors were treated, and have come to believe that the post-cataclysm chaos is actually better than the 'order' that preceded it. As such, they have a great antipathy toward anything resembling 'civilization' in the law-and-order kind of way.",
 							thumbnail: {
@@ -150,25 +175,31 @@ module.exports = class AskCommand extends Command {
 							},
 							fields: [
 								{
-									name: "Forum",
-									value: "http://www.mizahar.com/forums/sunberth-f60.html"
+										name: "Forums",
+										value: "[IC Forum](http://www.mizahar.com/forums/sunberth-f60.html), [OOC Forum](http://www.mizahar.com/forums/underneath-the-slag-heap-f158.html)"
 								},
 								{
-									name: "Lore Page",
-									value: "http://www.mizahar.com/lore/Sunberth"
+										name: "Getting Started",
+										value: "[Linkmap](http://www.mizahar.com/forums/topic56411.html), [Grade Requests](http://www.mizahar.com/forums/topic73598.html), [All Other Requests](http://www.mizahar.com/forums/help-desk-f9.html), [OOC Thread](http://www.mizahar.com/forums/topic56375.html)"
 								},
 								{
-									name: "Linkmap",
-									value: "http://www.mizahar.com/forums/topic56411.html"
+										name: "Fall 519",
+										value: "[Registry](http://www.mizahar.com/forums/topic77240.html)"
+								},
+								{
+									name: "Lore Pages",
+									value: "[Sunberth](http://www.mizahar.com/lore/Sunberth)"
 								}
-						],
-								footer: {
-									text: "Moderator: None, requests go through Help Desk"
-								}
+						]
 					});
-			} else if(type === 'zeltiva'){
+				} else if(type === 'zeltiva'){
 						return msg.embed({
-							color: 0x3573A4,
+							color: 0xC0DCF4,
+							author: {
+								name: "Storyteller: Gossamer, requests go through Help Desk",
+								url: "http://www.mizahar.com/forums/help-desk-f9.html",
+								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=57_1555170736.png'
+							},
 							title: 'Zeltiva',
 							description: "A port city surrounded on three sides by mountains, Zeltiva is the home of the finest shipbuilders and sailors in Mizahar. It also boasts an exceptional university, and is a center of trade in both goods and ideas.	",
 							thumbnail: {
@@ -176,25 +207,31 @@ module.exports = class AskCommand extends Command {
 							},
 							fields: [
 								{
-									name: "Forum",
-									value: "http://www.mizahar.com/forums/zeltiva-f26.html"
+										name: "Forums",
+										value: "[IC Forum](http://www.mizahar.com/forums/zeltiva-f26.html), [OOC Forum](http://www.mizahar.com/forums/all-at-sea-f137.html)"
 								},
 								{
-									name: "Lore Page",
-									value: "http://www.mizahar.com/lore/Zeltiva"
+										name: "Getting Started",
+										value: "[Codex](http://www.mizahar.com/forums/topic76365.html), [Grade Requests](http://www.mizahar.com/forums/topic76875.html), [All Other Requests](http://www.mizahar.com/forums/help-desk-f9.html), [OOC Thread](http://www.mizahar.com/forums/topic77011.html)"
 								},
 								{
-									name: "Codex",
-									value: "http://www.mizahar.com/forums/topic76365.html"
+										name: "Fall 519",
+										value: "[Registry](http://www.mizahar.com/forums/topic77241.html)"
+								},
+								{
+									name: "Lore Pages",
+									value: "[Zeltiva](http://www.mizahar.com/lore/Zeltiva)"
 								}
-						],
-								footer: {
-									text: "Moderator: None, requests go through Help Desk"
-								}
+						]
 					});
-			} else if(type === ['wind reach', 'wr']){
+				} else if(type === 'wind reach'){
 						return msg.embed({
-							color: 0x3573A4,
+							color: 0xC0DCF4,
+							author: {
+								name: "Storyteller: Gossamer, requests go through Help Desk",
+								url: "http://www.mizahar.com/forums/help-desk-f9.html",
+								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=57_1555170736.png'
+							},
 							title: 'Wind Reach',
 							description: "A remote western outpost in some of the tallest mountains of Kalea, here humanity has formed a unique bond with enormous, oversized eagles they live in harmony with. Often never touching the ground, these bow-wielding humans reside in Mt. Skyinarta, an ancient dead volcano they've carved out for their enormous companions.",
 							thumbnail: {
@@ -202,24 +239,25 @@ module.exports = class AskCommand extends Command {
 							},
 							fields: [
 								{
-									name: "Forum",
-									value: "http://www.mizahar.com/forums/wind-reach-f30.html"
+										name: "Forums",
+										value: "[IC Forum](http://www.mizahar.com/forums/zeltiva-f26.html), [OOC Forum](http://www.mizahar.com/forums/stoking-the-flames-f117.html)"
 								},
 								{
-									name: "Lore Page",
-									value: "http://www.mizahar.com/lore/Wind_Reach"
+										name: "Getting Started",
+										value: "[Codex](http://www.mizahar.com/forums/topic74853.html), [Grade Requests](http://www.mizahar.com/forums/topic73616.html), [All Other Requests](http://www.mizahar.com/forums/help-desk-f9.html), [OOC Thread](http://www.mizahar.com/forums/topic73565.html)"
 								},
 								{
-									name: "Codex",
-									value: "http://www.mizahar.com/forums/topic74853.html"
+										name: "Fall 519",
+										value: "[Registry](http://www.mizahar.com/forums/topic77236.html)"
+								},
+								{
+									name: "Lore Pages",
+									value: "[Wind Reach](http://www.mizahar.com/lore/Wind_Rich)"
 								}
-						],
-								footer: {
-									text: "Moderator: None, requests go through Help Desk"
-								}
+						]
 					});
-      } else {
-            return msg.say("that's not a city!");
+      	} else {
+            return msg.say("That's not a city!");
         }
 
     }

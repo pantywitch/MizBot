@@ -13,7 +13,7 @@ module.exports = class PatchCommand extends Command {
 
     run(msg) {
 			return msg.embed({
-					color: 0x3573A4,
+					color: 0x04385D,
 					title: 'Useful Links to Get Started',
 					description: "Don't be afraid to ask questions.",
 					thumbnail: {
