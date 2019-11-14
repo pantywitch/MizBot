@@ -4,7 +4,7 @@ module.exports = class WelcomeCommand extends Command {
     constructor(client) {
             super(client, {
                     name: 'welcome',
-                    aliases: ["welc", "start"],
+                    aliases: ["welc", "start", "newbie"],
                     group: 'util',
                     memberName: 'welcome',
                     description: 'Displays a list of links to get started on Mizahar.'
@@ -27,7 +27,7 @@ module.exports = class WelcomeCommand extends Command {
 					fields: [
               {
                 name: "Rules",
-                value: "[Rules](http://www.mizahar.com/lore/Rules), [Chat Rules](http://mizahar.com/lore/Chat_Rules), [Founder Announcements](http://www.mizahar.com/forums/topic74592.html), [13 Things You Need To Know](http://www.mizahar.com/lore/Things_You_Need_To_Know)"
+                value: "[Rules](http://www.mizahar.com/lore/Rules), [Chat Rules](http://mizahar.com/lore/Chat_Rules), [Founder Announcements](http://www.mizahar.com/forums/topic74592.html), [Dicing Guide](http://www.mizahar.com/lore/Dicing_Guide), [Resolve](http://www.mizahar.com/lore/Resolve)"
               },
 							{
 									name: "Start Here",

@@ -4,7 +4,7 @@ const lib = require('./../../lib.js');
 // just a list of the currently closed cities
 var closed = ['sahova', 'nyka', 'avanthal', 'the spires', 'sultros', 'alvadas', 'kalinor', 'taloba', 'zinrah', 'black rock', 'endrykas', 'riverfall', 'kenash', 'mura', 'abura'];
 
-module.exports = class AskCommand extends Command {
+module.exports = class CityCommand extends Command {
     constructor(client) {
 
         super(client, {
