@@ -35,7 +35,7 @@ module.exports = class AskCommand extends Command {
 					return msg.say("That city is closed!");
       	} else if (type === 'syka'){
 					return msg.embed({
-							color: 0x04385D,
+							color: 0x9B59B6,
 							author: {
 								name: "Storyteller: Gossamer",
 								url: "http://www.mizahar.com/forums/member57.html",
@@ -67,7 +67,7 @@ module.exports = class AskCommand extends Command {
 						});
       	} else if(type === 'lhavit'){
 					return msg.embed({
-							color: 0x04385D,
+							color: 0x9B59B6,
 							author: {
 								name: "Storyteller: Luminescence",
 								url: "http://www.mizahar.com/forums/member43765.html",
@@ -99,7 +99,7 @@ module.exports = class AskCommand extends Command {
 					});
 				} else if(type === 'syliras'){
 						return msg.embed({
-							color: 0x04385D,
+							color: 0x9B59B6,
 							author: {
 								name: "Storyteller: Mayhem",
 								url: "http://www.mizahar.com/forums/member117883.html",
@@ -127,7 +127,7 @@ module.exports = class AskCommand extends Command {
 					});
 				} else if(type === 'ravok'){
 						return msg.embed({
-							color: 0x04385D,
+							color: 0x9B59B6,
 							author: {
 								name: "Storyteller: Gillar",
 								url: "http://www.mizahar.com/forums/member58.html",
@@ -159,7 +159,7 @@ module.exports = class AskCommand extends Command {
 					});
 				} else if(type === 'sunberth'){
 						return msg.embed({
-							color: 0xC0DCF4,
+							color: 0x206694,
 							author: {
 								name: "Storyteller: Gossamer, requests go through Help Desk",
 								url: "http://www.mizahar.com/forums/help-desk-f9.html",
@@ -191,7 +191,7 @@ module.exports = class AskCommand extends Command {
 					});
 				} else if(type === 'zeltiva'){
 						return msg.embed({
-							color: 0xC0DCF4,
+							color: 0x206694,
 							author: {
 								name: "Storyteller: Gossamer, requests go through Help Desk",
 								url: "http://www.mizahar.com/forums/help-desk-f9.html",
@@ -223,7 +223,7 @@ module.exports = class AskCommand extends Command {
 					});
 				} else if(type === 'wind reach'){
 						return msg.embed({
-							color: 0xC0DCF4,
+							color: 0x206694,
 							author: {
 								name: "Storyteller: Gossamer, requests go through Help Desk",
 								url: "http://www.mizahar.com/forums/help-desk-f9.html",
