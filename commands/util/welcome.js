@@ -35,12 +35,12 @@ module.exports = class PatchCommand extends Command {
 							{
 									name: "City List",
 									value: "http://mizahar.com/lore/City_List",
-							}
+							},
+              {
+                  name: "Help Desk",
+                  value: "http://www.mizahar.com/forums/help-desk-f9.html"
+              }
 					]
 			});
-			//return msg.reply('Starting Guide: http://mizahar.com/lore/Starting_Guide
-			//	Starting Package: http://mizahar.com/lore/Starting_Package
-			//	Race List: http://mizahar.com/lore/Race_List
-			//	City List: http://mizahar.com/lore/City_List')
     }
 };
