@@ -47,7 +47,7 @@ module.exports = class WelcomeCommand extends Command {
 							},
               {
                   name: "Other Links",
-                  value: "[Scrapbook Forum](http://www.mizahar.com/forums/player-scrapbooks-f98.html), [BBCode Guide](http://www.mizahar.com/forums/topic122.html), [DATS](http://www.mizahar.com/lore/DATS), [Travel Time](http://www.mizahar.com/lore/Travel_times)"
+                  value: "[Scrapbook Forum](http://www.mizahar.com/forums/player-scrapbooks-f98.html), [BBCode Guide](http://www.mizahar.com/forums/topic122.html), [DATS](http://www.mizahar.com/lore/DATS), [Travel Times](http://www.mizahar.com/lore/Travel_times)"
               }
 					]
 			});

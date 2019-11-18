@@ -3,24 +3,24 @@ const lib = require('./../lib.js');
 
 class UserSetting
 {
-    
+
     get(userID, setting){
-        
+
         var db = new Database();
         var record = db.conn.prepare('SELECT * FROM [user_settings] WHERE [user] = :user AND [setting] = :setting').get({
             user: userID,
             setting: setting
         });
         db.close();
-        
+
         return (record) ? record : false;
-        
+
     }
-    
+
     set(userID, setting, value){
-        
+
         var db = new Database();
-        
+
         var record = this.get(userID, setting);
         if (record){
             db.conn.prepare('UPDATE [user_settings] SET [value] = :val WHERE [id] = :id').run({
@@ -34,11 +34,11 @@ class UserSetting
                 val: value
             });
         }
-        
+
         db.close();
-        
+
     }
-    
+
 }
 
 module.exports = UserSetting;

@@ -62,8 +62,11 @@ module.exports = class CityCommand extends Command {
 								{
 									name: "Lore Pages",
 									value: "[Syka](http://www.mizahar.com/lore/Syka)"
-								}
-							]
+								},
+              ],
+              footer: {
+                  text: "MOST AWESOME CITY EVER"
+              }
 						});
       	} else if(type === 'lhavit'){
 					return msg.embed({
