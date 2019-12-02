@@ -91,8 +91,8 @@ module.exports = class CityCommand extends Command {
 											value: "[Codex](http://www.mizahar.com/forums/topic36355.html), [Job and Wage Requests](http://www.mizahar.com/forums/topic75282.html), [OOC Thread](http://www.mizahar.com/forums/topic65868.html)"
 									},
 									{
-											name: "Fall 519",
-											value: "[Registry](http://www.mizahar.com/forums/topic77238.html), [Calendar](http://www.mizahar.com/forums/topic77260.html)"
+											name: "Winter 519",
+											value: "[Registry](http://www.mizahar.com/forums/topic77773.html), Calendar"
 									},
 									{
 										name: "Lore Pages",
@@ -108,23 +108,27 @@ module.exports = class CityCommand extends Command {
 								url: "http://www.mizahar.com/forums/member117883.html",
 								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=117883_1567473135.jpg'
 							},
-							title: 'Syliras, Currently Closed',
-							description: "Capital city of Sylira, Syliras is the cultural melting pot of humanity where folks are slowly rebuilding civilization in a setting forged by the honor of the Syliran Knights. Place of the massive Ironworks, extensive agriculture, and the Miza Mint, where coin across the nation is made... Syliras is an important part of the Mizaharian World.",
+							title: 'Syliras',
+							description: "Capital city of Sylira, Syliras is the cultural melting pot of humanity where folks are slowly rebuilding civilization in a setting forged by the honor of the Syliran Knights. Place of the massive Ironworks and the Miza Mint, as well as the maintainers of the Kabrin Road, the only major road in Mizahar, Syliras is an important part of the Mizaharian World.",
 							thumbnail: {
 								url: 'http://www.mizahar.com/forums/gallery/pic.php?mode=large&pic_id=63580'
 							},
 							fields: [
-								{
-									name: "Opening Date",
-									value: "December 1st, 2019 (Winter 1st 519)"
+                {
+									name: "Getting Started",
+									value: "[Syliras Starting Guide](http://www.mizahar.com/forums/topic77733.html), [NPCs](http://www.mizahar.com/forums/post548360.html#p548360), [OOC Thread](http://www.mizahar.com/forums/topic77179.html), [Request Thread](http://www.mizahar.com/forums/topic77691.html)"
 								},
 								{
 									name: "Forums",
 									value: "[Syliras Forum](http://www.mizahar.com/forums/syliras-closed-f19.html), [Cobalt Mountains Forum](http://www.mizahar.com/forums/the-cobalt-mountains-f79.html)"
 								},
+                {
+                  name: "Winter 519AV"
+                  value: "[Registry](http://www.mizahar.com/forums/topic77774.html)"
+                },
 								{
 									name: "Lore Pages",
-									value: "[Syliras](http://www.mizahar.com/lore/Syliras)"
+									value: "[Syliras](http://www.mizahar.com/lore/Syliras), [Syliran Knights](http://www.mizahar.com/lore/Syliran_Knights)"
 								}
 						],
 					});
