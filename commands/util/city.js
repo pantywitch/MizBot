@@ -123,7 +123,7 @@ module.exports = class CityCommand extends Command {
 									value: "[Syliras Forum](http://www.mizahar.com/forums/syliras-closed-f19.html), [Cobalt Mountains Forum](http://www.mizahar.com/forums/the-cobalt-mountains-f79.html)"
 								},
                 {
-                  name: "Winter 519AV"
+                  name: "Winter 519AV",
                   value: "[Registry](http://www.mizahar.com/forums/topic77774.html)"
                 },
 								{
