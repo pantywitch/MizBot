@@ -13,6 +13,6 @@ module.exports = class PatchCommand extends Command {
     }
 
     run(msg) {
-        return msg.reply('Patch notes for **'+version.version+'** can be found here: https://github.com/cwarwicker/discord-WriterBot/wiki/Patch-Notes');
+        return msg.reply('Patch notes for WriterBot **'+version.version+'** can be found here: https://github.com/cwarwicker/discord-WriterBot/wiki/Patch-Notes');
     }
 };

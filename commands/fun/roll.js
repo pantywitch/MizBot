@@ -5,7 +5,7 @@ module.exports = class RollCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'roll',
-            aliases: ['random', 'dice'],
+            aliases: ['dice'],
             group: 'fun',
             memberName: 'roll',
             description: 'Rolls a dice between 1-6, or 1 and a specified number',
@@ -22,12 +22,12 @@ module.exports = class RollCommand extends Command {
     }
 
     run(msg, {max}) {
-        
+
         var guildID = (msg.guild !== null) ? msg.guild.id : null;
-        
+
         // Flip the coin
         var rand = Math.floor(Math.random() * max) + 1;
         return msg.say(lib.get_string(guildID, 'roll:rolled') + ' ' + rand);
-        
+
     }
 };
