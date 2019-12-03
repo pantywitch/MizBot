@@ -92,7 +92,7 @@ module.exports = class CityCommand extends Command {
 									},
 									{
 											name: "Winter 519",
-											value: "[Registry](http://www.mizahar.com/forums/topic77773.html), Calendar"
+											value: "[Registry](http://www.mizahar.com/forums/topic77773.html), [Calendar](http://www.mizahar.com/forums/topic77777.html)"
 									},
 									{
 										name: "Lore Pages",

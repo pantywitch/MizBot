@@ -8,7 +8,7 @@ module.exports = class RandumCommand extends Command {
         super(client, {
             name: 'random',
             aliases: ['rand'],
-            group: 'writing',
+            group: 'util',
             memberName: 'random',
             description: 'Generates a random thing from the chosen list of things.',
             examples: [

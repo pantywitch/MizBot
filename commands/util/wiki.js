@@ -11,7 +11,7 @@ module.exports = class WikiCommand extends Command {
             memberName: 'wiki',
             description: 'Adds the term onto the end of http://www.Mizahar.com/lore/*, hopefully linking to a wiki page.',
             examples: [
-                '`city syka` - Shows a list of links for Syka',
+                '`wiki mizahar` - Replies with the lore homepage.',
             ],
             args: [
                 {

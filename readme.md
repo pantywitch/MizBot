@@ -22,8 +22,6 @@ A customized bot for the Mizahar [[Discord]] server.  Based on [https://github.c
 
 `~wrote`: Add to your total words written statistic
 
-`~skills`: Pick a random skill from the [[Skill List]]
-
 **Fun commands**
 
 `~8ball`: Ask the magic 8-ball a question. Your question will be routed to a text-processing AI and broken down into character sets, in order to properly analyze the content of the question and provide a meaningful answer.
@@ -56,6 +54,14 @@ A customized bot for the Mizahar [[Discord]] server.  Based on [https://github.c
 `~lists`: Displays a list of lists
 
 `~city`: Like '~welcome', but for a specific city
+
+`~mizbot`: Links http://www.mizahar.com/lore/MizBot
+
+`~random`: Use with skill, race, city, or location to respond with a random one of those items.
+
+`~map`: Use with geography, city, regions, trade, or kabrin to pull up the specific map.
+
+`~wiki`: Follow with the name of the wiki page (underscores and capitalization not important) and it will pull up that page. Note: doesn't search for the page, it just puts the link together.
 
 ***
 
