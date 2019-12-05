@@ -6,77 +6,77 @@ const maxLimit = 25;
 
 class NameGenerator
 {
-    
+
     constructor()
     {
         this.defaultLimit = 10;
     }
-        
-    
+
+
     generate(msg, type, limit)
     {
-        
+
         var guildID = (msg.guild !== null) ? msg.guild.id : null;
 
         // Make sure limit is correct
         if (limit > maxLimit){
             limit = maxLimit;
         }
-        
+
         if (limit < 1){
             limit = this.defaultLimit;
         }
-                
-        
+
+
         // Load the source
         var filepath = lib.get_asset_path(guildID, 'gen_'+type+'.json')
-                        
+
         try {
-            
+
             let result = fs.statSync('./'+filepath);
-                                    
+
             // Exists
             if (result.isFile()){
-                                                                
+
                 // Get the contents of the json file
                 var source = require('./../'+filepath);
-                                
+
                 var results = [];
                 var retries = 0;
-                
+
                 // Writing Prompts slightly different
                 if (type === 'idea'){
                     limit = 1;
                 }
-                                                                
-                
+
+
                 // Loop through n number of times
                 for (var i = 0; i < limit; i++)
                 {
 
                     var last = '';
-                    
+
                     // Pick a random format
                     var format = source.formats[Math.floor(Math.random()*source.formats.length)];
-                                                                                
+
                     // Build the string
                     var str = format.replace(/\$(\d+|[a-z]+)/g, function(match, capture){
 
                         var arr = source.names[capture];
-                                                                        
+
                         var el = arr[Math.floor(Math.random()*arr.length)];
-                                                
+
                         // We don't want the same string twice in a row, e.g. "riverriver", although it it's 2 or less characters, we can accept that.
                         while (el.length > 2 && el === last){
                             el = arr[Math.floor(Math.random()*arr.length)];
                         }
-                        
+
                         last = el;
-                        
+
                         return el;
 
                     });
-                                        
+
                     // Capitalise first letter of each word
                     if (type !== 'idea'){
                         var arr = str.split(" ");
@@ -87,7 +87,7 @@ class NameGenerator
 
                         str = arr.join(" ");
                     }
-                    
+
                     // If we haven't already got this exact one, append to results array
                     if (results.indexOf(str) < 0){
                         results.push(str);
@@ -100,14 +100,14 @@ class NameGenerator
                             i--;
                         }
 
-                    }				
+                    }
 
                 }
 
                 results.sort();
-                
+
                 var resp = '';
-                
+
                 if (type === 'char'){
                     resp += 'Here are your ' + limit + ' character names:\n\n';
                 } else if(type === 'place'){
@@ -122,30 +122,30 @@ class NameGenerator
                     resp += 'Here are your ' + limit + ' sci-fi book titles:\n\n';
                 } else if(type === 'book_hp'){
                     resp += 'Here are your ' + limit + ' Harry Potter book titles:\n\n';
-                } 
-                
+                }
+
                 resp += results.join('\n');
-                
+
                 return msg.say( resp );
-                
+
             } else {
                 return null;
             }
-            
+
         } catch(e){
-            
+
             var replyArray = ['Er...what?', 'Generate what, now?', 'I can\'t do that', 'That sounds like a cool feature, maybe I should add it?'];
             var rand = Math.round(Math.random() * (replyArray.length - 1));
             msg.say( replyArray[rand] );
             return null;
-            
+
         }
-        
-        
+
+
     }
-    
-    
-    
+
+
+
 }
 
 module.exports = NameGenerator;
