@@ -116,7 +116,7 @@ module.exports = class CityCommand extends Command {
 							fields: [
                 {
 									name: "Getting Started",
-									value: "[Syliras Starting Guide](http://www.mizahar.com/forums/topic77733.html), [NPCs](http://www.mizahar.com/forums/post548360.html#p548360), [OOC Thread](http://www.mizahar.com/forums/topic77179.html), [Request Thread](http://www.mizahar.com/forums/topic77691.html)"
+									value: "[Syliras Starting Guide](http://www.mizahar.com/forums/topic77733.html), [Linkmap](http://www.mizahar.com/forums/topic32.html), [OOC Thread](http://www.mizahar.com/forums/topic77179.html), [Request Thread](http://www.mizahar.com/forums/topic77691.html)"
 								},
 								{
 									name: "Forums",
