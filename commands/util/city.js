@@ -56,8 +56,8 @@ module.exports = class CityCommand extends Command {
 										value: "[Codex](http://www.mizahar.com/forums/topic65044.html), [Request Thread](http://www.mizahar.com/forums/topic66737.html), [Employment Guide](http://www.mizahar.com/forums/topic71334.html), [OOC Thread](http://www.mizahar.com/forums/topic73545.html)"
 								},
 								{
-										name: "Fall 519",
-										value: "[Registry](http://www.mizahar.com/forums/topic77239.html), [Calendar](http://www.mizahar.com/forums/topic77245.html)"
+										name: "Winter 519",
+										value: "[Registry](http://www.mizahar.com/forums/topic77815.html), [Happenings](http://www.mizahar.com/forums/topic77814.html)"
 								},
 								{
 									name: "Lore Pages",
