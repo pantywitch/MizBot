@@ -50,6 +50,13 @@ module.exports = class RandumCommand extends Command {
 				} else if (type === 'race'){
 					var rand = Math.floor(Math.random() * race.race.length);
 					return msg.say(`[${rand + 1}] ${race.race[rand]}`);
-				}
-			}
-		};
+    } if (type === 'npc') {
+        var randrace = Math.floor(Math.random() * race.race.length);
+        var randskill1 = Math.floor(Math.random() * skills.skills.length);
+        var randskill2 = Math.floor(Math.random() * skills.skills.length);
+        var randskill3 = Math.floor(Math.random() * skills.skills.length);
+
+        return msg.say(`${race.race[randrace]}` + " who knows " + `${skills.skills[randskill1]}` + ", " + `${skills.skills[randskill2]}` + ", and " + `${skills.skills[randskill3]}` + ".");
+    }
+    }
+  }
