@@ -57,7 +57,7 @@ module.exports = class CityCommand extends Command {
 								},
 								{
 										name: "Winter 519",
-										value: "[Registry](http://www.mizahar.com/forums/topic77815.html), [Happenings](http://www.mizahar.com/forums/topic77814.html)"
+										value: "[Registry](http://www.mizahar.com/forums/topic77815.html), [Happenings](http://www.mizahar.com/forums/topic77814.html), [Group Plotnotes](http://www.mizahar.com/forums/topic77797.html)"
 								},
 								{
 									name: "Lore Pages",
@@ -124,7 +124,7 @@ module.exports = class CityCommand extends Command {
 								},
                 {
                   name: "Winter 519AV",
-                  value: "[Registry](http://www.mizahar.com/forums/topic77774.html)"
+                  value: "[Registry](http://www.mizahar.com/forums/topic77774.html), [Seasonal Info](http://www.mizahar.com/forums/topic77864.html), [Quest](http://www.mizahar.com/forums/post548923.html#p548923)"
                 },
 								{
 									name: "Lore Pages",
@@ -155,10 +155,6 @@ module.exports = class CityCommand extends Command {
 										value: "[Linkmap](http://www.mizahar.com/forums/topic70803.html), [Request Thread](http://www.mizahar.com/forums/topic68754.html), [OOC Thread](http://www.mizahar.com/forums/topic65902.html)"
 								},
 								{
-										name: "Fall 519",
-										value: "[Registry](http://www.mizahar.com/forums/topic77298.html), [Calendar](http://www.mizahar.com/forums/topic77297.html)"
-								},
-								{
 									name: "Lore Pages",
 									value: "[Ravok](http://www.mizahar.com/lore/Ravok)"
 								}
@@ -168,9 +164,9 @@ module.exports = class CityCommand extends Command {
 						return msg.embed({
 							color: 0x206694,
 							author: {
-								name: "Storyteller: Gossamer, requests go through Help Desk",
-								url: "http://www.mizahar.com/forums/help-desk-f9.html",
-								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=57_1555170736.png'
+								name: "Storyteller: Resolve",
+								url: "http://www.mizahar.com/forums/member127810.html",
+								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=127810_1575993537.png'
 							},
 							title: 'Sunberth',
 							description: "A former mining town almost entirely destroyed in the Valterrian, Sunberth is populated by the descendants of the mine workers. They hold a tremendous grudge against the way their ancestors were treated, and have come to believe that the post-cataclysm chaos is actually better than the 'order' that preceded it. As such, they have a great antipathy toward anything resembling 'civilization' in the law-and-order kind of way.",
@@ -187,8 +183,8 @@ module.exports = class CityCommand extends Command {
 										value: "[Linkmap](http://www.mizahar.com/forums/topic56411.html), [Grade Requests](http://www.mizahar.com/forums/topic73598.html), [All Other Requests](http://www.mizahar.com/forums/help-desk-f9.html), [OOC Thread](http://www.mizahar.com/forums/topic56375.html)"
 								},
 								{
-										name: "Fall 519",
-										value: "[Registry](http://www.mizahar.com/forums/topic77240.html)"
+										name: "Winter 519",
+										value: "[Registry](http://www.mizahar.com/forums/topic77841.html), [Calendar](http://www.mizahar.com/forums/topic77878.html), [Requests](http://www.mizahar.com/forums/topic77857.html)"
 								},
 								{
 									name: "Lore Pages",
@@ -219,8 +215,8 @@ module.exports = class CityCommand extends Command {
 										value: "[Codex](http://www.mizahar.com/forums/topic76365.html), [Grade Requests](http://www.mizahar.com/forums/topic76875.html), [All Other Requests](http://www.mizahar.com/forums/help-desk-f9.html), [OOC Thread](http://www.mizahar.com/forums/topic77011.html)"
 								},
 								{
-										name: "Fall 519",
-										value: "[Registry](http://www.mizahar.com/forums/topic77241.html)"
+										name: "Winter 519",
+										value: "[Registry](http://www.mizahar.com/forums/topic77828.html)"
 								},
 								{
 									name: "Lore Pages",
@@ -251,8 +247,8 @@ module.exports = class CityCommand extends Command {
 										value: "[Codex](http://www.mizahar.com/forums/topic74853.html), [Grade Requests](http://www.mizahar.com/forums/topic73616.html), [All Other Requests](http://www.mizahar.com/forums/help-desk-f9.html), [OOC Thread](http://www.mizahar.com/forums/topic73565.html)"
 								},
 								{
-										name: "Fall 519",
-										value: "[Registry](http://www.mizahar.com/forums/topic77236.html)"
+										name: "Winter 519",
+										value: "[Registry](http://www.mizahar.com/forums/topic77830.html)"
 								},
 								{
 									name: "Lore Pages",

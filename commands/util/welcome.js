@@ -14,13 +14,8 @@ module.exports = class WelcomeCommand extends Command {
     run(msg) {
 			return msg.embed({
 					color: 0xF1C40F,
-          author: {
-            name: 'Need character sheet help? Talk to Antipodes!',
-            url: 'http://www.mizahar.com/forums/member42114.html',
-            icon_url: 'http://www.mizahar.com/forums/download/file.php?avatar=42114_1567836619.png'
-          },
 					title: 'Getting Started on Mizahar',
-					description: "Don't be afraid to ask questions!",
+					description: "Need character sheet help? Ask in chat!",
 					thumbnail: {
 							url: 'http://www.mizahar.com/forums/gallery/pic.php?mode=large&pic_id=63580'
 					},
