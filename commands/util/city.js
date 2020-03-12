@@ -19,7 +19,7 @@ module.exports = class CityCommand extends Command {
             args: [
                 {
                     key: 'type',
-                    prompt: 'Which city? Reply with `syka`, `lhavit`, `syliras`, `ravok`, `sunberth`, `zeltiva`, or `wind reach`',
+                    prompt: 'Which city? Reply with `syka`, `lhavit`, `syliras`, `outpost`, `ravok`, `sunberth`, `zeltiva`, or `wind reach`',
                     type: 'string'
                 }
             ]
@@ -56,8 +56,8 @@ module.exports = class CityCommand extends Command {
 										value: "[Codex](http://www.mizahar.com/forums/topic65044.html), [Request Thread](http://www.mizahar.com/forums/topic66737.html), [Employment Guide](http://www.mizahar.com/forums/topic71334.html), [OOC Thread](http://www.mizahar.com/forums/topic73545.html)"
 								},
 								{
-										name: "Winter 519",
-										value: "[Registry](http://www.mizahar.com/forums/topic77815.html), [Happenings](http://www.mizahar.com/forums/topic77814.html), [Group Plotnotes](http://www.mizahar.com/forums/topic77797.html)"
+										name: "Spring 520",
+										value: "[Registry](http://www.mizahar.com/forums/topic78157.html)"
 								},
 								{
 									name: "Lore Pages",
@@ -91,8 +91,8 @@ module.exports = class CityCommand extends Command {
 											value: "[Codex](http://www.mizahar.com/forums/topic36355.html), [Job and Wage Requests](http://www.mizahar.com/forums/topic75282.html), [OOC Thread](http://www.mizahar.com/forums/topic65868.html)"
 									},
 									{
-											name: "Winter 519",
-											value: "[Registry](http://www.mizahar.com/forums/topic77773.html), [Calendar](http://www.mizahar.com/forums/topic77777.html)"
+											name: "Spring 520",
+											value: "[Registry](http://www.mizahar.com/forums/topic78163.html), [Calendar](http://www.mizahar.com/forums/topic78186.html)"
 									},
 									{
 										name: "Lore Pages",
@@ -123,8 +123,8 @@ module.exports = class CityCommand extends Command {
 									value: "[Syliras Forum](http://www.mizahar.com/forums/syliras-closed-f19.html), [Cobalt Mountains Forum](http://www.mizahar.com/forums/the-cobalt-mountains-f79.html)"
 								},
                 {
-                  name: "Winter 519AV",
-                  value: "[Registry](http://www.mizahar.com/forums/topic77774.html), [Seasonal Info](http://www.mizahar.com/forums/topic77864.html), [Quest](http://www.mizahar.com/forums/post548923.html#p548923)"
+                  name: "Spring 520",
+                  value: "[Registry](http://www.mizahar.com/forums/topic78165.html), [Quest (rescheduled for Spring)](http://www.mizahar.com/forums/post548923.html#p548923)"
                 },
 								{
 									name: "Lore Pages",
@@ -183,8 +183,8 @@ module.exports = class CityCommand extends Command {
 										value: "[Linkmap](http://www.mizahar.com/forums/topic56411.html), [Grade Requests](http://www.mizahar.com/forums/topic73598.html), [All Other Requests](http://www.mizahar.com/forums/help-desk-f9.html), [OOC Thread](http://www.mizahar.com/forums/topic56375.html)"
 								},
 								{
-										name: "Winter 519",
-										value: "[Registry](http://www.mizahar.com/forums/topic77841.html), [Calendar](http://www.mizahar.com/forums/topic77878.html), [Requests](http://www.mizahar.com/forums/topic77857.html)"
+										name: "Spring 520",
+										value: "[Registry](http://www.mizahar.com/forums/topic78161.html), [Calendar](http://www.mizahar.com/forums/topic78179.html), [Requests](http://www.mizahar.com/forums/topic77857.html)"
 								},
 								{
 									name: "Lore Pages",
@@ -215,8 +215,8 @@ module.exports = class CityCommand extends Command {
 										value: "[Codex](http://www.mizahar.com/forums/topic76365.html), [Grade Requests](http://www.mizahar.com/forums/topic76875.html), [All Other Requests](http://www.mizahar.com/forums/help-desk-f9.html), [OOC Thread](http://www.mizahar.com/forums/topic77011.html)"
 								},
 								{
-										name: "Winter 519",
-										value: "[Registry](http://www.mizahar.com/forums/topic77828.html)"
+										name: "Spring 520",
+										value: "[Registry](http://www.mizahar.com/forums/topic78158.html)"
 								},
 								{
 									name: "Lore Pages",
@@ -256,6 +256,37 @@ module.exports = class CityCommand extends Command {
 								}
 						]
 					});
+        } else if (type === 'outpost'){
+					return msg.embed({
+							color: 0x9B59B6,
+							author: {
+								name: "Storyteller: Gossamer",
+								url: "http://www.mizahar.com/forums/member57.html",
+								icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=57_1555170736.png'
+							},
+							title: 'The Outpost',
+							description: "A gift from Xyna to the peoples of Mizahar. It is a magical place full of potential and possibility where all can gather and exchange ideas and commerce.  It is a universal trading post ran by Xyna and her priests and priestesses, and is acessible by anyone from any major city in Mizahar through their infamous Dovecotes.",
+							thumbnail: {
+									url: 'http://www.mizahar.com/forums/gallery/pic.php?mode=large&pic_id=63580'
+							},
+							fields: [
+								{
+										name: "Forums",
+										value: "[IC Forum](http://www.mizahar.com/forums/the-outpost-f186.html), [OOC Thread](http://www.mizahar.com/forums/topic77925.html)"
+								},
+								{
+										name: "Getting Started",
+										value: "[Codex](http://www.mizahar.com/forums/topic77894.html), [Registry](http://www.mizahar.com/forums/topic77939.html), [Requests](http://www.mizahar.com/forums/topic78047.html)"
+								},
+								{
+									name: "Lore Pages",
+									value: "[Xyna](http://www.mizahar.com/lore/Xyna)"
+								},
+              ],
+              footer: {
+                  text: "Voted #1 Vacation Destination by MizBot"
+              }
+						});
 					// if you type in nonsense this is what you get
       	} else {
             return msg.say("That's not a city!");

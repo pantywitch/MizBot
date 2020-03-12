@@ -13,6 +13,17 @@ module.exports = class PatchCommand extends Command {
     }
 
     run(msg) {
-        return msg.reply('Patch notes for WriterBot **'+version.version+'** can be found here: https://github.com/cwarwicker/discord-WriterBot/wiki/Patch-Notes');
+        return msg.embed({
+          color: 0xf5ec3d,
+          author: {
+            name: "MizBot",
+            url: "https://github.com/pantywitch/MizBot",
+          },
+          title: 'Patch Notes 1.1',
+          description: "Updated this command.",
+          thumbnail: {
+            url: 'http://www.mizahar.com/forums/gallery/pic.php?mode=large&pic_id=63580'
+          },
+      });
     }
 };

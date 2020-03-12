@@ -237,15 +237,15 @@ module.exports = class ChallengeCommand extends Command {
             // Push them into waiting array
             this.waiting[key].users.push(userID);
 
-            // Wait for yes/no answer
-            msg.channel.awaitMessages( m => ( (m.author.id == userID) && (m.content.toLowerCase() === 'yes' || m.content.toLowerCase() === 'no') ), {
+            // Wait for aye/no answer
+            msg.channel.awaitMessages( m => ( (m.author.id == userID) && (m.content.toLowerCase() === 'aye' || m.content.toLowerCase() === 'no') ), {
                 max: 1,
                 time: 30000,
                 errors: ['time']
             } ).then(mg => {
 
                 var answer = mg.first().content;
-                if (answer.toLowerCase() === 'yes'){
+                if (answer.toLowerCase() === 'aye'){
 
                     this.set_challenge(msg, userID, challenge, xp);
                     msg.say(`${msg.author}: ${lib.get_string(msg.guild.id, 'challenge:accepted')}: **${challenge}**\n${lib.get_string(msg.guild.id, 'challenge:tocomplete')}`);

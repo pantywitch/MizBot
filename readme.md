@@ -34,18 +34,19 @@ A customized bot for the Mizahar [[Discord]] server.  Based on [https://github.c
 
 `~reassure`: Gives you reassurance/motivation
 
-`~roll`: Rolls a dice between 1-6, or 1 and a specified number
+`~roll`: Rolls a dice between 1-6, or 1 and a specified number, e.g. `~roll 100` for a 1d100.
 
 `~xp`: Checks your server Experience Points and Level. Use the "top" flag to see the top 10 on this server
 
 `~rimshot`: Badum-tss
 
 
+
 **Utility Commands**
 
 `~info`: Shows bot information and status
 
-`~patch`: Shows the latest patch notes for the original bot (Writer-Bot)
+`~patch`: Shows the latest patch notes
 
 `~reset`: Allows you to reset your stats
 

@@ -16,12 +16,13 @@ module.exports = class RandumCommand extends Command {
 								'`random location` Geneartes a random location, including cities.',
 								'`random skill` Generates a random skill from the skill list.',
 								'`random race` Generates a random race from the race list.',
-								'`random NPC` Generates a random NPC with 3 random skills, a random race, and a random gender.  Use ~generate char to pick a random name. (NOT YET IMPLEMENTED)'
+								'`random NPC` Generates a random NPC with 3 random skills and a random race.',
+                '`random word` Generates a random English word.',
             ],
 						args: [
 							{
 								key: 'type',
-								prompt: ' What thing do you want to randomize? Reply with `city`, `location`, `skill`, `race`, or `NPC`.',
+								prompt: ' What thing do you want to randomize? Reply with `city`, `location`, `skill`, `race`, `word`, or `NPC`.',
 								type: 'string'
 							}
 						]
@@ -35,6 +36,7 @@ module.exports = class RandumCommand extends Command {
       var location = lib.get_asset(guildID, 'rlocation.json');
       var race = lib.get_asset(guildID, 'rrace.json');
       var skills = lib.get_asset(guildID, 'rskills.json')
+      var words = lib.get_asset(guildID, 'words.json')
 
         type = type.toLowerCase();
 				// Now we list the things!
@@ -50,6 +52,9 @@ module.exports = class RandumCommand extends Command {
 				} else if (type === 'race'){
 					var rand = Math.floor(Math.random() * race.race.length);
 					return msg.say(`[${rand + 1}] ${race.race[rand]}`);
+        } else if (type === 'word'){
+          var rand = Math.floor(Math.random() * words.words.length);
+          return msg.say(`[${rand + 1}] ${words.words[rand]}`);
     } if (type === 'npc') {
         var randrace = Math.floor(Math.random() * race.race.length);
         var randskill1 = Math.floor(Math.random() * skills.skills.length);
