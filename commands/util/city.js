@@ -56,8 +56,8 @@ module.exports = class CityCommand extends Command {
 										value: "[Codex](http://www.mizahar.com/forums/topic65044.html), [Request Thread](http://www.mizahar.com/forums/topic66737.html), [Employment Guide](http://www.mizahar.com/forums/topic71334.html), [OOC Thread](http://www.mizahar.com/forums/topic73545.html)"
 								},
 								{
-										name: "Spring 520",
-										value: "[Registry](http://www.mizahar.com/forums/topic78157.html)"
+										name: "Summer 520",
+										value: "[Registry](http://www.mizahar.com/forums/topic78544.html), [Calendar](http://www.mizahar.com/forums/topic78582.html)"
 								},
 								{
 									name: "Lore Pages",
@@ -91,8 +91,8 @@ module.exports = class CityCommand extends Command {
 											value: "[Codex](http://www.mizahar.com/forums/topic36355.html), [Job and Wage Requests](http://www.mizahar.com/forums/topic75282.html), [OOC Thread](http://www.mizahar.com/forums/topic65868.html)"
 									},
 									{
-											name: "Spring 520",
-											value: "[Registry](http://www.mizahar.com/forums/topic78163.html), [Calendar](http://www.mizahar.com/forums/topic78186.html)"
+											name: "Summer 520",
+											value: "[Registry](http://www.mizahar.com/forums/topic78555.html), [Calendar](http://www.mizahar.com/forums/topic78584.html)"
 									},
 									{
 										name: "Lore Pages",
@@ -123,8 +123,8 @@ module.exports = class CityCommand extends Command {
 									value: "[Syliras Forum](http://www.mizahar.com/forums/syliras-closed-f19.html), [Cobalt Mountains Forum](http://www.mizahar.com/forums/the-cobalt-mountains-f79.html)"
 								},
                 {
-                  name: "Spring 520",
-                  value: "[Registry](http://www.mizahar.com/forums/topic78165.html), [Quest (rescheduled for Spring)](http://www.mizahar.com/forums/post548923.html#p548923)"
+                  name: "Summer 520",
+                  value: "[Registry](http://www.mizahar.com/forums/topic78605.html)"
                 },
 								{
 									name: "Lore Pages",
@@ -183,8 +183,8 @@ module.exports = class CityCommand extends Command {
 										value: "[Linkmap](http://www.mizahar.com/forums/topic56411.html), [Grade Requests](http://www.mizahar.com/forums/topic73598.html), [All Other Requests](http://www.mizahar.com/forums/help-desk-f9.html), [OOC Thread](http://www.mizahar.com/forums/topic56375.html)"
 								},
 								{
-										name: "Spring 520",
-										value: "[Registry](http://www.mizahar.com/forums/topic78161.html), [Calendar](http://www.mizahar.com/forums/topic78179.html), [Requests](http://www.mizahar.com/forums/topic77857.html)"
+										name: "Summer 520",
+										value: "[Registry](http://www.mizahar.com/forums/topic78599.html), [Requests](http://www.mizahar.com/forums/topic77857.html)"
 								},
 								{
 									name: "Lore Pages",
@@ -215,10 +215,6 @@ module.exports = class CityCommand extends Command {
 										value: "[Codex](http://www.mizahar.com/forums/topic76365.html), [Grade Requests](http://www.mizahar.com/forums/topic76875.html), [All Other Requests](http://www.mizahar.com/forums/help-desk-f9.html), [OOC Thread](http://www.mizahar.com/forums/topic77011.html)"
 								},
 								{
-										name: "Spring 520",
-										value: "[Registry](http://www.mizahar.com/forums/topic78158.html)"
-								},
-								{
 									name: "Lore Pages",
 									value: "[Zeltiva](http://www.mizahar.com/lore/Zeltiva)"
 								}
@@ -245,10 +241,6 @@ module.exports = class CityCommand extends Command {
 								{
 										name: "Getting Started",
 										value: "[Codex](http://www.mizahar.com/forums/topic74853.html), [Grade Requests](http://www.mizahar.com/forums/topic73616.html), [All Other Requests](http://www.mizahar.com/forums/help-desk-f9.html), [OOC Thread](http://www.mizahar.com/forums/topic73565.html)"
-								},
-								{
-										name: "Winter 519",
-										value: "[Registry](http://www.mizahar.com/forums/topic77830.html)"
 								},
 								{
 									name: "Lore Pages",
