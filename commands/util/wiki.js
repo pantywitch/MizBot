@@ -16,7 +16,6 @@ module.exports = class WikiCommand extends Command {
             args: [
                 {
                     key: 'type',
-                    prompt: 'Which city? Reply with `syka`, `lhavit`, `syliras`, `ravok`, `sunberth`, `zeltiva`, or `wind reach`',
                     type: 'string'
                 }
             ]
