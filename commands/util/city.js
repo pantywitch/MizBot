@@ -2,7 +2,7 @@ const { Command } = require('discord.js-commando');
 const lib = require('./../../lib.js');
 
 // just a list of the currently closed cities
-var closed = ['sahova', 'nyka', 'avanthal', 'the spires', 'sultros', 'alvadas', 'kalinor', 'taloba', 'zinrah', 'black rock', 'endrykas', 'riverfall', 'kenash', 'mura', 'abura'];
+var closed = ['sahova', 'nyka', 'the spires', 'sultros', 'alvadas', 'kalinor', 'taloba', 'zinrah', 'black rock', 'endrykas', 'kenash', 'mura', 'abura'];
 
 module.exports = class CityCommand extends Command {
     constructor(client) {
@@ -19,7 +19,7 @@ module.exports = class CityCommand extends Command {
             args: [
                 {
                     key: 'type',
-                    prompt: 'Which city? Reply with `syka`, `lhavit`, `syliras`, `outpost`, `ravok`, `sunberth`, `zeltiva`, or `wind reach`',
+                    prompt: 'Which city? Reply with `syka`, `lhavit`, `syliras`, `outpost`, `ravok`, `sunberth`, `riverfall`, `zeltiva`, or `wind reach`',
                     type: 'string'
                 }
             ]
@@ -279,6 +279,38 @@ module.exports = class CityCommand extends Command {
                   text: "Voted #1 Vacation Destination by MizBot"
               }
 						});
+          } else if (type === 'riverfall'){
+            return msg.embed({
+                color: 0x9B59B6,
+                author: {
+                  name: "Storyteller: Surreal",
+                  url: "http://www.mizahar.com/forums/member140592.html",
+                  icon_url:'http://www.mizahar.com/forums/download/file.php?avatar=140592_1591931350.jpg'
+                },
+                title: 'Riverfall',
+                description: "Built on the side of an enormous waterfall where the Bluevein River plunges into the Suvan Sea in a three thousand foot drop, Riverfall is the posh home of the Akalak warriors. Here they've made a luxurious fortress bastion that welcomes visitors so long as they play by the rules. Complete with zoos, aquariums, even a water park, the home of the Akalak is a paradise in an otherwise violent world.	",
+                thumbnail: {
+                    url: 'http://www.mizahar.com/w/images/2/2c/Riverfall.jpg'
+                },
+                fields: [
+                  {
+                      name: "Forums",
+                      value: "[IC Forum](http://www.mizahar.com/forums/riverfall-f39.html), [OOC Forum](http://www.mizahar.com/forums/behind-the-waterfall-f140.html)"
+                  },
+                  {
+                      name: "Getting Started",
+                      value: "[Codex](http://www.mizahar.com/forums/topic18506.html), [The Land and Sea Gates](http://www.mizahar.com/forums/topic18516.html), [Request Thread](http://www.mizahar.com/forums/topic78617.html), [OOC Thread](http://www.mizahar.com/forums/topic55126.html)"
+                  },
+                  {
+                      name: "Summer 520",
+                      value: "[Registry](http://www.mizahar.com/forums/topic78616.html), [Calendar](http://www.mizahar.com/forums/topic78619.html)"
+                  },
+                  {
+                    name: "Lore Pages",
+                    value: "[Riverfall](http://www.mizahar.com/lore/Riverfall)"
+                  },
+                ],
+              });
 					// if you type in nonsense this is what you get
       	} else {
             return msg.say("That's not a city!");
