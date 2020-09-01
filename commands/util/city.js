@@ -2,7 +2,7 @@ const { Command } = require('discord.js-commando');
 const lib = require('./../../lib.js');
 
 // just a list of the currently closed cities
-var closed = ['sahova', 'nyka', 'the spires', 'sultros', 'alvadas', 'kalinor', 'taloba', 'zinrah', 'black rock', 'endrykas', 'kenash', 'mura', 'abura'];
+var closed = ['avanthal', 'sahova', 'nyka', 'the spires', 'sultros', 'alvadas', 'kalinor', 'taloba', 'zinrah', 'black rock', 'endrykas', 'kenash', 'mura', 'abura'];
 
 module.exports = class CityCommand extends Command {
     constructor(client) {
